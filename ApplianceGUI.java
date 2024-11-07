@@ -8,25 +8,25 @@ public class ApplianceGUI {
         frame.setTitle("Project 2 - Appliance List w Linked Lists");
 
         JTextArea fridgeArea = new JTextArea();
-        ApplianceNode current = refrigerators.head;
+        ApplianceNode current = refrigerators.head.next;
         while (current != null){
-            fridgeArea.append(current.toString() + "\n");
+            fridgeArea.append(current.data.toString() + "\n");
             current = current.next;
         }
         frame.add(new JScrollPane(fridgeArea));
 
         JTextArea dishWasherArea = new JTextArea();
-        ApplianceNode current2 = dishwashers.head; 
+        ApplianceNode current2 = dishwashers.head.next; 
         while(current2 != null){
-            dishWasherArea.append(current2.toString()+"\n");
+            dishWasherArea.append(current2.data.toString()+"\n");
             current2 = current2.next; 
         }
         frame.add(new JScrollPane(dishWasherArea));
 
         JTextArea microwaveArea = new JTextArea();
-        ApplianceNode current3 = microwaves.head;
+        ApplianceNode current3 = microwaves.head.next;
         while(current3 != null){
-            microwaveArea.append(current3.toString() + "\n");
+            microwaveArea.append(current3.data.toString() + "\n");
             current3=current3.next;
         }
         frame.add(new JScrollPane(microwaveArea));
