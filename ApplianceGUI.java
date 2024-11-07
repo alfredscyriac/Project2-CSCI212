@@ -31,7 +31,7 @@ public class ApplianceGUI {
         }
         frame.add(new JScrollPane(microwaveArea));
 
-        frame.setSize(600, 400);
+        frame.setSize(900, 400);
         frame.setVisible(true);
     }
     
