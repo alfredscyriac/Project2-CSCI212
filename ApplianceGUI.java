@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 public class ApplianceGUI {
-    public ApplianceGUI(SortedApplianceList refrigerators, SortedApplianceList dishwahsers, SortedApplianceList microwaves){
+    public ApplianceGUI(SortedApplianceList refrigerators, SortedApplianceList dishwashers, SortedApplianceList microwaves){
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         frame.setLayout(new GridLayout(1, 3)); 
@@ -14,6 +14,14 @@ public class ApplianceGUI {
             current = current.next;
         }
         frame.add(new JScrollPane(fridgeArea));
+
+        JTextArea dishWasherArea = new JTextArea();
+        ApplianceNode current2 = dishwashers.head; 
+        while(current2 != null){
+            dishWasherArea.append(current2.data.toString()+"\n");
+            current2 = current2.next; 
+        }
+        frame.add(new JScrollPane(dishWasherArea));
     }
     
 }
