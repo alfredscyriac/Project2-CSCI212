@@ -10,7 +10,7 @@ public class ApplianceGUI {
         JTextArea fridgeArea = new JTextArea();
         ApplianceNode current = refrigerators.head;
         while (current != null){
-            fridgeArea.append(current.data.toString() + "\n");
+            fridgeArea.append(current.toString() + "\n");
             current = current.next;
         }
         frame.add(new JScrollPane(fridgeArea));
@@ -18,7 +18,7 @@ public class ApplianceGUI {
         JTextArea dishWasherArea = new JTextArea();
         ApplianceNode current2 = dishwashers.head; 
         while(current2 != null){
-            dishWasherArea.append(current2.data.toString()+"\n");
+            dishWasherArea.append(current2.toString()+"\n");
             current2 = current2.next; 
         }
         frame.add(new JScrollPane(dishWasherArea));
@@ -26,7 +26,7 @@ public class ApplianceGUI {
         JTextArea microwaveArea = new JTextArea();
         ApplianceNode current3 = microwaves.head;
         while(current3 != null){
-            microwaveArea.append(current3.data.toString() + "\n");
+            microwaveArea.append(current3.toString() + "\n");
             current3=current3.next;
         }
         frame.add(new JScrollPane(microwaveArea));
