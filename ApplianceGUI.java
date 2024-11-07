@@ -30,6 +30,9 @@ public class ApplianceGUI {
             current3=current3.next;
         }
         frame.add(new JScrollPane(microwaveArea));
+
+        frame.setSize(600, 400);
+        frame.setVisible(true);
     }
     
 }
