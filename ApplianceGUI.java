@@ -22,6 +22,14 @@ public class ApplianceGUI {
             current2 = current2.next; 
         }
         frame.add(new JScrollPane(dishWasherArea));
+
+        JTextArea microwaveArea = new JTextArea();
+        ApplianceNode current3 = microwaves.head;
+        while(current3 != null){
+            microwaveArea.append(current3.data.toString() + "\n");
+            current3=current3.next;
+        }
+        frame.add(new JScrollPane(microwaveArea));
     }
     
 }
