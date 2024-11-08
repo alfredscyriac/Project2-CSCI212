@@ -13,7 +13,7 @@ public abstract class Appliance {
     }
 
     /**
-     * Returns the serial number of the appliance this method is used on
+     * @return the serial number of the appliance this method is used on
      */
     public String getSerialNumber () {  
         return serialNumber;
@@ -36,7 +36,7 @@ public abstract class Appliance {
     }
 
     /**
-     * Returns a string which is serial number 
+     * @return a string which is serial number 
      * toString is used in Dishwasher.java, Microwave.java, Refrigerator.java, and ApplianceGUI.java
      * @return the serial number as a String
      */

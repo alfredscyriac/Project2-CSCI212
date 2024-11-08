@@ -21,7 +21,7 @@ public class Refrigerator extends Appliance {
     }
 
     /** 
-     * returns a string that concatenates all the components of the refrigerator class for our GUI
+     * @return a string that concatenates all the components of the refrigerator class for our GUI
      * (serial number, price, cubic feet)
      */
     @Override

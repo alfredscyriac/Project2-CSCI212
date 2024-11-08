@@ -21,7 +21,7 @@ public class Microwave extends Appliance {
     }
 
     /** 
-     * returns a string that concatenates all the components of the microwave class for our GUI
+     * @return a string that concatenates all the components of the microwave class for our GUI
      * (serial number, price, watts)
      */
     @Override
