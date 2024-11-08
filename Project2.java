@@ -2,7 +2,8 @@
 // CSCI212 Lab Section: 121E
 public class Project2 {
     public static void main(String[] args) {
-        // Create a Sorted Link List for each appliance type 
+        // Create a Sorted Link List for each appliance type, this way when items are added (continued) 
+        // (continued) it will automatically be put in the correct position
         // Used TextFileInput.java to read in p2input.txt and stored the parsed values into these 
         // These sorted linked lists will be used in our GUI
         SortedApplianceList refrigerators = new SortedApplianceList();
