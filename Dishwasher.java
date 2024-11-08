@@ -11,6 +11,8 @@ public class Dishwasher extends Appliance {
      * @param serialNumber is the serial number of the dishwasher 
      * @param price is the price of the dishwasher 
      * @param undercounterInstallation if Y then it needs undercounter installion and it doesn't if its n
+     * All passed in parameters set the values for the private instance 
+     * variables while retriving serialNumber from the parent class which is appliance
      */
     public Dishwasher(String serialNumber, double price, boolean undercounterInstallation) {
         super(serialNumber);
