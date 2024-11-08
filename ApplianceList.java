@@ -5,7 +5,7 @@
  * .last returns the last element in the linked list 
  * .length returns the length of the linked list
  */
-public class ApplianceList {
+public abstract class ApplianceList {
     protected ApplianceNode head;
     protected ApplianceNode last;
     protected int length;
